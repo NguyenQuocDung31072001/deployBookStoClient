@@ -15,7 +15,7 @@ import Footer from '../component/footer'
 import { cleanBookBought } from '../redux/book_bought_slices'
 const { TextArea } = Input
 
-const IMAGE_URL = 'http://localhost:5000/image_avatar/avatar_user.png'
+const IMAGE_URL = 'https://bookstoapi.herokuapp.com/image_avatar/avatar_user.png'
 
 function SettingUser() {
   const currentUser = useSelector(state => state.auth.login.currentUser)

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { updateAccountAdmin } from "../redux/api_request";
 import { loginFailed,logout } from "../redux/auth_slices";
 
-const IMAGE_URL = "http://localhost:5000/image_avatar/avatar_admin.png";
+const IMAGE_URL = "https://bookstoapi.herokuapp.com/image_avatar/avatar_admin.png";
 
 function SettingAdmin() {
   const currentUser = useSelector((state) => state.auth.login.currentUser);

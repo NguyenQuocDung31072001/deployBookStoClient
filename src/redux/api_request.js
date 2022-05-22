@@ -32,7 +32,7 @@ import {
   updateAuthorData
 } from './author_slice'
 
-const API_URL = 'http://localhost:5000'
+const API_URL = 'https://bookstoapi.herokuapp.com/'
 
 export const registerApi = async (user, dispatch) => {
   dispatch(registerStart())
