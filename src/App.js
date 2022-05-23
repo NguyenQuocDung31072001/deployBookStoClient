@@ -1,5 +1,6 @@
 import './App.css'
-import 'antd/dist/antd.css'
+// import 'antd/dist/antd.css'
+import 'antd/dist/antd.min.css'
 import {
   BrowserRouter,
   Route,

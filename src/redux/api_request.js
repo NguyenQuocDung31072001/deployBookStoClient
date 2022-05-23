@@ -33,6 +33,7 @@ import {
 } from './author_slice'
 
 const API_URL = 'https://bookstoapi.herokuapp.com'
+// const API_URL = 'http://localhost:5000'
 
 export const registerApi = async (user, dispatch) => {
   dispatch(registerStart())
@@ -412,6 +413,7 @@ export const getProvinceData = async () => {
     const res = await axios.get(
       API_URL + `/v1/selling_e_books/shipping/province`
     )
+    console.log('res data province',res.data)
     return res.data
   } catch (error) {
     console.log(error)
